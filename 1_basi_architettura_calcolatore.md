@@ -49,3 +49,6 @@ Pulsante accensione -> BIOS (memoria non volatile che gestisce il tipo di hw e p
 g++ - GNU ...
 
 TODO: completa
+
+Editor != IDE
+Editor testuale != editor ipertestuale (Word)
