@@ -46,9 +46,11 @@ Ogni file è costitutio da una serie di bytes
  - ...
 
 ## Users management
-Dimensione in bytes
+Dimensione in bytes [ls -l]
+
 3 gruppi di permessi: proprietario, gruppo, altri [ls -l]
 Tipi di permessi: R, W, X
+
 Secondo valore di _ls -l_ -> numero di link al file
 
 ### Gestione gruppi e utenti
