@@ -26,5 +26,5 @@ In totale 6 durante il corso dell'anno:
 ## Lezioni
 Codifica nome: numerolezione_argomentosliedes
 
-[](1_problemi_processi_programmi.md)
+<1_problemi_processi_programmi.md>
 
