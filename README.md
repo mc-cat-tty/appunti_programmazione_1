@@ -27,4 +27,7 @@ In totale 6 durante il corso dell'anno:
 Codifica nome: numerolezione_argomentosliedes
 
 [Problemi processi programmi](1_problemi_processi_programmi.md)
+[Accenni architettura del calcolatore](1_basi_architettura_calcolatore.md)
+[Ambiente UNIX](1_ambiente_unix.md)
+[Intro C++](1_intro_cpp.md)
 
