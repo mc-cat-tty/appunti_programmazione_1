@@ -23,7 +23,7 @@ Vedi M2 + PCIe
 www.pctechguide.com
 
 ## Sistema Operativo
-
+`
 App
 ^
 |
@@ -37,6 +37,7 @@ OS kernel
 ^
 |
 HW
+`
 
 TODO: schema
 
@@ -46,9 +47,10 @@ Pulsante accensione -> BIOS (memoria non volatile che gestisce il tipo di hw e p
 
 
 ## Compilatore
-g++ - GNU ...
+g++ - GNU C++ Compiler
 
 TODO: completa
 
 Editor != IDE
+
 Editor testuale != editor ipertestuale (Word)

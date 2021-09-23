@@ -6,6 +6,7 @@ Prblema -> processo di risoluzione (algoritmo/ricetta) -> codifica dello stesso 
 
 ## Algoritmi
 Algoritmo: sequenza finita di azioni da compiere su una serie di oggetti, per risolvere una classe di problemi, in un tempo finito
+
 Un algo è composto da azioni elementari:
  - assolutamente non ambigue
  - perfettamente definite
