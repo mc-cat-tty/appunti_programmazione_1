@@ -30,3 +30,32 @@ Ctrl+r -> search in commands history
 Ctrl+d -> logout
 ...
 
+## Filesystem
+Organizzato come un albero, a partire dalla radice "/"
+
+In UNIX tutto è un file. Solamente i processi sono un'entità a parte
+
+Ogni file è costitutio da una serie di bytes
+
+### Tipologia di files
+ - file regolare
+ - dir
+ - link simbolico
+ - socket
+ - named pipe
+ - ...
+
+## Users management
+Dimensione in bytes
+3 gruppi di permessi: proprietario, gruppo, altri [ls -l]
+Tipi di permessi: R, W, X
+Secondo valore di _ls -l_ -> numero di link al file
+
+### Gestione gruppi e utenti
+`chown`
+
+TODO: completa
+
+`find` e `locate`
+`grep`
+
