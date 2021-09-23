@@ -17,11 +17,13 @@ In totale 6 durante il corso dell'anno:
  - orale (facoltativa): implementazione di un programma sul calcolatore
 
 ## Materiale
- - slide
- - videolezioni dello scorso anno
+ - [slide](https://algogroup.unimore.it/people/paolo/courses/programmazione_I/)
+ - [videolezioni dello scorso anno](https://drive.google.com/drive/folders/1fPspiDtOzJNPT43o8A35-JLu7Vz5E1Ho?usp=sharing)
  - lezioni in presenza
  - lab
  - test anni passati
+ - Moodle
+ - Teams
 
 ## Lezioni
 Codifica nome: numerolezione_argomentosliedes
