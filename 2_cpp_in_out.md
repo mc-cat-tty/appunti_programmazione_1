@@ -63,4 +63,19 @@ Il percorso relativo viene utilizzato per indicare alla shell la posizione del f
 - /usr/bin
 - /usr/local/bin
 
+## Caratteri speciali non visualizzabili
+- apici
+- doppi apici
+- backslash
+- tab
+- space
+- ...
 
+Per renderli visualizzabili è necessario anteporre un backslash "\"
+
+## Manipilatori
+Gli operatori di uscita possono essere accodati. Non solo le stringhe sono un argomento valido, ma anche i manipolatori.
+
+I *manipolatori* possono esssere utilizzati per modificare la formattazione dell'output.
+Esempi:
+ - `endl` = "\n"
