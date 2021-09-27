@@ -9,6 +9,6 @@ int main() {
 	cin >> a;
 	cout << "Inserisci il secondo numero: ";
 	cin >> b;
-	cout << a << " * " << b << " = " << a*b << endl;
+	cout << a << "*" << b << "=" << a*b << endl;
 	return 0;
 }
