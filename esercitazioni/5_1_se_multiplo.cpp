@@ -9,6 +9,6 @@ int main() {
 	cin >> a;
 	cout << "Inserisci secondo numero intero positivo: ";
 	cin >> b;
-	cout << (((a%b-1)*2+1)%2+1)/2 << endl;
+	cout << abs((((a%b-1)*2+1)%2-1)/2) << endl;
 	return 0;
 }
