@@ -10,3 +10,11 @@ istruzione-scelta-multipla ::=
 	}
 
 l'_espressione di selezione_ deve essere di tipo *numerabile*: int, char o enum.
+
+## Pro e contro
+Pro:
+	- aumenta leggibilità
+	- evita di scorrere una serie di if-else
+Contro:
+	- costrutto ingombrante (sconsigliato per numero casi minore o uguale a 2)
+	- non utilizzabile con numeri reali e tipi di dato strutturati
