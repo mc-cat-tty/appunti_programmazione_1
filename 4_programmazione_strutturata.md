@@ -57,3 +57,6 @@ Operazione illegale -> CPU lancia hardware exception -> OS associa errore -> ter
 - Non replicare il codice. Se un bug è contenuto in una replica, probabilmente anche le altre repliche lo contengono. Codice riusabile.
 
 TODO: link a es velocità download + reimplementa a casa + multiplo.cc + ordinati.cc
+
+## If annidato
+L'else è sempre associato all'if più vicino
