@@ -4,7 +4,8 @@ using namespace std;
 
 int main() {
 	// [kb/s]
-	const int	V1_MAX	= 200,	// if t <= 60 min
+	const int	T1_MAX	= 60*60,// seconds
+				V1_MAX	= 200,	// if t <= 60 min
 				V1_MIN	= 50,	// if t > 60 min
 				V2		= 100;	// always
 	const int	V1_MAX_TIME_SECONDS = 60*60;
@@ -13,8 +14,8 @@ int main() {
 	cout << "Dimensione film [kb]: ";
 	cin >> dim;
 	
-	int t_v1_max = dim/V1_MAX;
-	if (t_v1_max <= 60)
+	int t_v1_max = dim/V1_MAX;	// seconds
+	if (t_v1_max <= T1_MAX)
 		cout << "Server 1 in " << t_v1_max/60;
 	else {
 		int max_dim_v1_max = V1_MAX*V1_MAX_TIME_SECONDS;
@@ -26,7 +27,7 @@ int main() {
 		else
 			cout << "Server 2 in " << t_v2/60;
 	}
-	cout << endl;
+	cout << " minutes" << endl;
 
 	return 0;
 }
