@@ -46,3 +46,8 @@ Vantaggi:
 	- una sola rappresentazione per lo zero: tutti i bit a 0
 
 Gli interi in C++ sono rappresentati in complemento a 2.
+
+## Testing
+Tracing = stampa risultati intermedi
+
+White box e black box.
