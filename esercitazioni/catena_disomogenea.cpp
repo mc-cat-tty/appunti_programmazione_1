@@ -3,81 +3,63 @@
 using namespace std;
 
 int main() {
-	int	scelta,									// scelta del menù
-			num_anelli_ferro = 0,
-			num_anelli_rame = 0,
-			pos1_rame,							// prima posizione anello rame. 0 non presente.
-			pos2_rame,							// seconda posizione anello rame. 0 non presente.
-			pos,										// posizione inserimento o rimozione
-			tipo;										// tipo di anello: 1 - ferro, 2 - rame
-
-	bool	ok = true;							// flag che segnala se l'operazione è andata a buon fine
+	// Struttura dati
+	int n,			// numero anelli
+		pos_1 = 0,	// posizione rame 1. 0 se libera (fuori dal range)
+		pos_2 = 0;	// posizione rame 2. 0 se libera (fuori dal range)
+	
+	// Variabili di appoggio
+	int scelta,		// scelta switch
+		materiale,	// 1 ferro, 2 rame
+		pos,		// posizione scelta per inserimento
+		error = false;
+	
 	while (true) {
-		cout  << "1. Inserimento\n"
-					<< "2. Estrazione\n"
-					<< "3. Stampa\n"
-					<< "4. Terminazione\n"
-					<< "Scelta: ";
-
-		cin >> scelta;
+		cout	<< "1. inserimento"	<< endl
+				<< "2. rimozione"	<< endl
+				<< "3. stampa"		<< endl
+				<< "4. exit"		<< endl;
+		cout << ">> "; cin >> scelta;
 		
-		switch(scelta) {
+		switch (scelta) {
 			case 1:
-				cout << "Tipo anello (1-Ferro, 2-Rame): "; cin >> tipo;
-				cout << "Posizione: "; cin >> pos;
-				if (pos>=1 && pos<=num_anelli_rame+num_anelli_ferro+1) { // Range check
-					if (tipo == 2 && num_anelli_rame < 2) { // check num max rame
-						num_anelli_rame++;
-						if (pos1_rame == 0)
-							pos1_rame = pos;
-						else if (pos2_rame == 0)
-							pos2_rame = pos;
-					}
-					else if (tipo == 1) {
-						num_anelli_ferro++;
-					}
-					else {
-						ok = false;
-						break;
-					}
-					if (pos <= pos1_rame && !(tipo==2 && num_anelli_rame==1))
-						pos1_rame++;
-					if (pos <= pos2_rame && !(tipo==2 && num_anelli_rame==2))
-						pos2_rame++;
+				cout << "Ferro (1) o rame (2)? "; cin >> materiale;
+				cout << "Posizione? "; cin >> pos;
+				if (!(pos>=1 && pos<=n+1) || (materiale == 2 && pos_1!=0 && pos_2!=0)) {
+					error = true;
+					break;  // esco se pos fuori dal range o inserimento rame ma posto finito
 				}
-				else {
-					ok = false;
+				n++;
+				if (pos <= pos_1)  // se inserisco un anello a sinistra di un rame shifto la sua posizione a destra
+					pos_1++;
+				if (pos <= pos_2)
+					pos_2++;
+				if (materiale == 2) {
+					if (pos_1 == 0)
+						pos_1 = pos;
+					else if (pos_2 == 0)
+						pos_2 = pos;
 				}
 				break;
 			case 2:
-				cout << "Posizione: "; cin >> pos;
-				if (pos>=1 && pos<=num_anelli_rame+num_anelli_ferro) { // Range check
-					// Rimuovo rame se presente, altrimenti ferro
-					if (pos == pos1_rame && pos1_rame != 0) {
-						num_anelli_rame--;
-						pos1_rame = 0;
-					}
-					else if (pos == pos2_rame && pos2_rame != 0) {
-						num_anelli_rame--;
-						pos2_rame = 0;
-					}
-					else {
-						num_anelli_ferro--;
-					}
-					
-					// Scalo
-					if (pos <= pos1_rame)
-						pos1_rame--;
-					if (pos <= pos2_rame)
-						pos2_rame--; 
+				cout << "Posizione? ";  cin >> pos;
+				if (!(pos>=1 && pos<=n)) {
+					error = true;
+					break;
 				}
-				else {
-					ok = false;
-				}
+				n--;
+				if (pos == pos_1)
+					pos_1 = 0;
+				if (pos == pos_2)
+					pos_2 = 0;
+				if (pos < pos_1)
+					pos_1--;
+				if (pos < pos_2)
+					pos_2--;
 				break;
 			case 3:
-				for (int i=1; i<=num_anelli_ferro+num_anelli_rame; i++) {
-					if ((i == pos1_rame && pos1_rame != 0) || (i == pos2_rame && pos2_rame != 0))
+				for (int i = 1; i <= n; i++) {
+					if (i == pos_1 || i == pos_2)
 						cout << "R";
 					else
 						cout << "F";
@@ -87,12 +69,14 @@ int main() {
 			case 4:
 				return 0;
 			default:
-				cout << "Scelta non valida" << endl;
+				error = true;
+				break;
 		}
-		if (!ok)
-			cout << "Operazione non consentita" << endl;
-		ok = true;
+		
+		if (error)
+			cout << "Errore" << endl;
+		error = false;
 	}
-
+	
 	return 0;
 }
