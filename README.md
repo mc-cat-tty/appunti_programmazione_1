@@ -9,12 +9,12 @@ Corso di programmazione 1, anno accademico 2021/2022, UniMoRe. Con il professore
 In totale 6 durante il corso dell'anno:
  - dicembre
  - gennaio
- - prove parziali a partire da fine ottobre (permetto di skippare la prova teorica)
+ - prove parziali a partire da fine ottobre (permettono di skippare la prova teorica)
 
 ### Prove
  - teorica: domande aperte e chiuse
- - pratica
- - orale (facoltativa): implementazione di un programma sul calcolatore
+ - pratica: implementazione di un programma sul calcolatore
+ - orale (facoltativa)
 
 ## Materiale
  - [slide ed esercitazioni](https://algogroup.unimore.it/people/paolo/courses/programmazione_I/vecchie_edizioni/edizione_2021/)
