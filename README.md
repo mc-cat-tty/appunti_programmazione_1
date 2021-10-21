@@ -34,3 +34,41 @@ Lezione 1:
  - [Ambiente UNIX](1_ambiente_unix.md)
  - [Intro C++](1_intro_cpp.md)
 
+Lezione 2:
+ - [Intro linguaggio C](2_intro_c.md)
+ - [La memoria](2_mem.md)
+ - [Struttura programmi](2_struttura_programma.md)
+ - [I/O](2_cpp_in_out.md)
+
+Lezione 3:
+ - [Assegnamento](3_assegnamento.md)
+ - [Sintassi](3_sintassi.md)
+ 
+Lezione 4:
+ - [Bool](4_bool.md)
+ - [Operatori ed espressioni](4_operatori.md)
+ - [Programmazione strutturata](4_programmazione_strutturata.md)
+ 
+Lezione 5:
+ - [Tipi di dato](5_dimensioni_dato.md)
+ - [Fasi di sviluppo](5_fasi_sviluppo.md)
+ - [Miniprova](5_miniprova_prima_test.md)
+ - [Switch](5_siwtch.md)
+ 
+Lezione 6:
+ - [While](6_while.md)
+ - [For](6_for.md)
+ - [nop](6_istruzione_vuota.md)
+
+Lezione 7:
+ - [Notazione posizionale](7_notazione_posizionale.md)
+ 
+Lezione 8:
+ - [Funzioni](8_funzioni.md)
+ 
+Lezione 9:
+ - [Codice di qualità](9_codice_di_qualità.md)
+ - [Debugging](9_debugging.md)
+ - [Best practice funzioni](9_best_practice_funzioni.md)
+ - [Passaggio parametri](9_tipi_passaggio.md)
+
