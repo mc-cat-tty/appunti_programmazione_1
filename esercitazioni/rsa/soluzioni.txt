@@ -1,0 +1,5 @@
+Chiave: (5, 173, 323)
+
+msg cifrato -> msg decifrato
+int: 178 -> 315
+char: 58 -> u
