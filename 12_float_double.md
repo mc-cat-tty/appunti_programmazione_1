@@ -84,3 +84,11 @@ Tipicamente il float (4 byte) hanno un precisione di 6 cifre decimali, mentre il
 
 ## Rappresentazione dello zero
 La mantissa, per definizione ha la prima cifra diversa da zero, quindi 0 non sarebbe rappresentabile -> se tutti i bit sono esattamente a zero, il numero complessivo è considerato come zero.
+
+## Confronto approssimato
+Hint: usa range quando fai confronti tra numeri reali per far fronte ad eventuali errori di approssimazione dovuti alla memorizzazione dei numeri float e double.
+
+## exit
+Per uscire dal programma in qualsiasi punto di esso si può chiamare la funzione `void exit(int n)`
+
+Warning: l'operatore `%` non esiste per float e double
