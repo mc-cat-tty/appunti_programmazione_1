@@ -54,10 +54,14 @@ digits10			numero cifre in base 10
 is_signed			se ammette valori negativi
 is_integer		true se è un tipo discreto
 
-TODO: completa da slide a pagina 91, link: https://algogroup.unimore.it/people/paolo/courses/programmazione_I/vecchie_edizioni/edizione_2021/materiale_2021/lezioni/Cap_10-Enum-reali-conv-tipo.pdf
+Inoltre, per i numeri in virgola mobile:
+epsilon()				minimo valore tale che 1+epsilon != 1 -> precisione del tipo di dato
+round_error()		errore arrotondamento
+min_exponent		minimo esponente tale che n == m\*(2^esp)
+min_exponent10	minimo esponente tale che n == m\*(10^esp)
+max_exponent		massimo esponente tale che n == m\*(2^esp)
+max_exponent10	massimo esponente tale che n == m\*(10^esp)
 
-epsilon()			minimo valore tale che 1+epsilon != 1 -> precisione del tipo di dato
-round_Error()	errore arrotondamento
 
 ## Espressioni eterogenee
 Ogni qualvolta siamo in presenza di operazioni che coinvolgono operandi di diverso tipo
