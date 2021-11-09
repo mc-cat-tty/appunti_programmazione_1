@@ -38,4 +38,4 @@ Gli array dinamici vengono allocati nell'heap (come vedremo più avanti)
 
 Hint: usa il flag `--pedantic-error` per evitare che il compilatore non permetta di definire VLA
 
-[](esercitazioni/stampa_array.cpp)
+[stampa_array.cpp](esercitazioni/stampa_array.cpp)
