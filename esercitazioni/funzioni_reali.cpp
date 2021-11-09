@@ -24,15 +24,15 @@ int main() {
 }
 
 double val_assoluto(double n) {
-	return n < 0 ? -1*n : n;
+	return n < 0. ? -n : n;
 }
 
 double arrotonda_per_eccesso(double n) {
 	if (val_assoluto(n)-static_cast<int>(val_assoluto(n)) == 0)
 		return n;
 	
-	return n > 0 ?
-			static_cast<int>(n)+1
+	return n > 0. ?
+			static_cast<int>(n)+1.
 			: static_cast<int>(n);
 }
 
@@ -40,7 +40,7 @@ double arrotonda_per_difetto(double n) {
 	if (val_assoluto(n)-static_cast<int>(val_assoluto(n)) == 0)
 		return n;
 	
-	return n > 0 ?
+	return n > 0. ?
 			static_cast<int>(n)
-			: static_cast<int>(n)-1;
+			: static_cast<int>(n)-1.;
 }
