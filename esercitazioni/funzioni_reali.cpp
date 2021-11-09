@@ -1,5 +1,6 @@
 #include <iostream>
 #include <cmath>
+#include <limits>
 
 using namespace std;
 
@@ -28,7 +29,7 @@ double val_assoluto(double n) {
 }
 
 double arrotonda_per_eccesso(double n) {
-	if (val_assoluto(n)-static_cast<int>(val_assoluto(n)) == 0)
+	if (val_assoluto(n)-static_cast<int>(val_assoluto(n)) < numeric_limits<double>::epsilon())
 		return n;
 	
 	return n > 0. ?
@@ -37,7 +38,7 @@ double arrotonda_per_eccesso(double n) {
 }
 
 double arrotonda_per_difetto(double n) {
-	if (val_assoluto(n)-static_cast<int>(val_assoluto(n)) == 0)
+	if (val_assoluto(n)-static_cast<int>(val_assoluto(n)) < numeric_limits<double>::epsilon())
 		return n;
 	
 	return n > 0. ?
