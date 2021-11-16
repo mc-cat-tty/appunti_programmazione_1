@@ -17,7 +17,7 @@ In totale 6 durante il corso dell'anno:
  - orale (facoltativa)
 
 ## Materiale
- - [slide ed esercitazioni](https://algogroup.unimore.it/people/paolo/courses/programmazione_I/vecchie_edizioni/edizione_2021/)
+ - [slide ed esercitazioni](https://algogroup.unimore.it/people/paolo/courses/programmazione_I/vecchie_edizioni/edizione_2021/materiale_2021/)
  - [videolezioni dello scorso anno](https://drive.google.com/drive/folders/1fPspiDtOzJNPT43o8A35-JLu7Vz5E1Ho?usp=sharing)
  - lezioni in presenza
  - lab
