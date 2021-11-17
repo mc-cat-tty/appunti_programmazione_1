@@ -2,6 +2,7 @@
 
 using namespace std;
 
+// 0 non è un input value valido, in quanto usato come "marcatore"
 void stampa_occorrenze (int v[], int dim) {
 	int c;
 	for (int i=0; i<dim; i++) {
