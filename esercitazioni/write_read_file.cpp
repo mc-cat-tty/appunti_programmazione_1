@@ -24,6 +24,7 @@ int main() {
 		return 1;
 	}
 	
+	fr >> noskipws;
 	while (cout << c) {
 		fr >> c;
 		if (fr.eof())
