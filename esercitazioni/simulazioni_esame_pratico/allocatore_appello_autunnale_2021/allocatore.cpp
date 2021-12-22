@@ -105,7 +105,8 @@ bool salva_memoria(mem_t &m, const char fn[]) {
 	f_out.write(reinterpret_cast<char *>(&(m.max_dim)), sizeof(int)*1);
 	f_out.write(reinterpret_cast<char *>(&(m.current_dim)), sizeof(int)*1);
 	f_out.write(reinterpret_cast<char *>(m.block_v), sizeof(block_t)*m.current_dim);
-
+	
+	f_out.close();
 	return static_cast<bool>(f_out);
 }
 
@@ -122,7 +123,7 @@ bool carica_memoria(mem_t &m, const char fn[]) {
 	m.block_v = new block_t[m.current_dim];
 	f_in.read(reinterpret_cast<char *>(m.block_v), sizeof(block_t)*m.current_dim);
 
-
+	f_in.close();
 	return static_cast<bool>(f_in);
 }
 
