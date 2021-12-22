@@ -1,0 +1,29 @@
+1. Reinizializza puzzle
+2. Stampa puzzle
+3. Salva puzzle
+4. Carica puzzle
+5. Trova parola in verticale
+6. Trova parola globalmente
+7. Esci
+
+
+1. Reinizializza puzzle
+2. Stampa puzzle
+3. Salva puzzle
+4. Carica puzzle
+5. Trova parola in verticale
+6. Trova parola globalmente
+7. Esci
+
+
+Parola: 
+ASSENTE
+1. Reinizializza puzzle
+2. Stampa puzzle
+3. Salva puzzle
+4. Carica puzzle
+5. Trova parola in verticale
+6. Trova parola globalmente
+7. Esci
+
+
