@@ -20,13 +20,14 @@ void inizializza(puzzle_t &p) {
 }
 
 void reinizializza(puzzle_t &p, int n, bool is_fill_from_stdin) {
-	if (p.dim != n) {
+	if (p.dim != n && p.dim != 0) {
 		for (int i=0; i<p.dim; i++) {
 			delete[] p.tabella[i];  // dealloca i singoli array
 		}
 		delete[] p.tabella;  // dealloca l'array di puntatori
-		p.dim = n;
 	}
+
+	p.dim = n;
 
 	// allocazione
 	p.tabella = new char*[p.dim];
